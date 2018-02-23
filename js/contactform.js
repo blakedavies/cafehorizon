@@ -1,4 +1,4 @@
-	function checkform() {
+	
 		var val = $("#entry.1594840891").val();
 		if (val = 'TEST') {
         
