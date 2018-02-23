@@ -1,5 +1,5 @@
 $('form').submit(function(e) {
-      if (parseInt($('input[name="entry.1594840891"]').val()) == 12) {
+      if (parseInt($('input[name="entry.82829002"]').val()) == 12) {
         return true;
       }
       else{
