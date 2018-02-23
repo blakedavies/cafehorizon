@@ -21,7 +21,7 @@ $('form').submit(function(e) {
 		return true;
 	}
 	else{
-		alert('You not enterd the correct value');
+		alert('You not enterd the correct captcha code value');
 		return false;
 	}
 });
