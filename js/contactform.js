@@ -14,13 +14,11 @@ $('form').submit(function(e) {
 	          console.log('Submission failed: ' + error);
 	        }
 	      });
-	    $('#gform').on('submit', function(e) {
 	  		$('#gform *').fadeOut(0);
 	  		$('#contact-box *').fadeOut(0);
 	  		$('#gform').prepend(
 	    		'<div class="thank-you-box"><h3 class="thank-you">Thank-you!!<h3><p class="thank-you">This is a website template.  Please contact Blake Davies directly via his website at http://blakedavies.net/ .</p></div>'
 	    	);
-	  	});
 	  	return true;
       }
       else{
