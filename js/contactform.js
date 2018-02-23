@@ -1,4 +1,12 @@
-$('#gform').submit(function(e) {
+$('form').submit(function(e) {
+      if (parseInt($('input[name="entry.1594840891"]').val()) == 12) {
+        return true;
+      }
+      else{
+        alert('You not enterd the correct value');
+        return false;
+      }
+
 	      e.preventDefault();
 	      $.ajax({
 	        url: "https://docs.google.com/a/blakedavies.net/forms/d/e/1FAIpQLSdlElv_pBFNUwP7OZ4wI-BLIA_QLDMjxa1v3UwvucJCjuSVbg/formResponse",
