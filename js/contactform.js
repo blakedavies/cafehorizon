@@ -1,13 +1,10 @@
+var n1 = Math.round(Math.random() * 10 + 1);
+var n2 = Math.round(Math.random() * 10 + 1);
 
-	var n1 = Math.round(Math.random() * 10 + 1);
-    var n2 = Math.round(Math.random() * 10 + 1);
-
-    $('document').ready(function(){
-    $("#a").val(n1 + " + " + n2);
+$('document').ready(function(){
+	$("#a").val(n1 + " + " + n2);
 	document.getElementsByName('captcha')[0].placeholder=("CAPTCHA CODE: " + n1 + "+" + n2);
-
 });
-
 
 $('form').submit(function(e) {
 	if (eval($("#captcha").val()) == (parseInt(n1) + parseInt(n2))) {
