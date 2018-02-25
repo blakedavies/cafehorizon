@@ -1,5 +1,13 @@
+$('document').ready(function(){
+	var n1 = Math.round(Math.random() * 10 + 1);
+    var n2 = Math.round(Math.random() * 10 + 1);
+	document.getElementsByName('captcha')[0].placeholder=("CAPTCHA CODE: " + n1 + "+" + n2);
+
+});
+
+
 $('form').submit(function(e) {
-	if (parseInt($('input[name="captcha"]').val()) == 12) {
+	if  (eval($("#captcha").val()) == (n1+n2)) {
 		e.preventDefault();
 		$.ajax({
 			url: "https://docs.google.com/a/blakedavies.net/forms/d/e/1FAIpQLSdlElv_pBFNUwP7OZ4wI-BLIA_QLDMjxa1v3UwvucJCjuSVbg/formResponse",
