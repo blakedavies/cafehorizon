@@ -7,7 +7,7 @@ $('document').ready(function(){
 
 
 $('form').submit(function(e) {
-	if  (eval($("#captcha").val()) == (n1+n2)) {
+	if (parseInt($('input[name="captcha"]').val()) == 12) {
 		e.preventDefault();
 		$.ajax({
 			url: "https://docs.google.com/a/blakedavies.net/forms/d/e/1FAIpQLSdlElv_pBFNUwP7OZ4wI-BLIA_QLDMjxa1v3UwvucJCjuSVbg/formResponse",
