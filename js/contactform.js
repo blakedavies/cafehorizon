@@ -3,8 +3,7 @@ $('document').ready(function(){
     var n2 = Math.round(Math.random() * 10 + 1);
     $("#a").val(n1 + " + " + n2);
 	document.getElementsByName('captcha')[0].placeholder=("CAPTCHA CODE: " + n1 + "+" + n2);
-
-});
+}
 
 
 $('form').submit(function(e) {
